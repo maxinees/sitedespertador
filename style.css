@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f2f2f2;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.85);
+  max-width: 500px;
+  margin: auto;
+  border-radius: 15px;
+  margin-top: 40px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+#relogio {
+  font-size: 3em;
+}
+
+#status {
+  margin: 10px 0;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.ativado {
+  color: white;
+  background: green;
+}
+
+.desativado {
+  color: white;
+  background: red;
+}
+
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.botoes button {
+  padding: 10px 15px;
+  font-size: 0.9em;
+  width: 100%;
+  max-width: 200px; /* Garantir que os botões tenham o mesmo tamanho */
+}
+
+#btn-ativar, #btn-desativar, #btn-falar, #btn-teste {
+  flex: 1;
+}
+
+.form input,
+.form select,
+.form button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  font-size: 1em;
+}

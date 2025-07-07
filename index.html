@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Relógio com Despertador</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="relogio">--:--:--</h1>
+    <div id="status" class="desativado">Despertador: Desativado</div>
+
+    <div class="botoes linha">
+      <button id="btn-ativar">Ativar Despertador</button>
+      <button id="btn-desativar">Desativar Despertador</button>
+    </div>
+
+    <div class="botoes linha">
+      <button id="btn-falar">Falar Hora</button>
+      <button id="btn-teste">Teste</button>
+    </div>
+
+    <div class="form">
+      <label for="horario">Escolha o horário:</label>
+      <input type="time" id="horario" />
+
+      <label for="acao">Ação ao despertar:</label>
+      <select id="acao">
+        <option value="falar">Falar a Hora</option>
+        <option value="musica">Tocar Música</option>
+      </select>
+
+      <label for="musica">Escolher música:</label>
+      <input type="file" id="musica" accept="audio/*" />
+
+      <label for="fundo">Imagem de fundo:</label>
+      <input type="file" id="fundo" accept="image/*" />
+      <button id="removerFundo" style="display:none;">Remover Fundo</button>
+    </div>
+  </div>
+
+  <audio id="audio"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
